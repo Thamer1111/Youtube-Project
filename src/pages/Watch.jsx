@@ -25,7 +25,6 @@ function Watch() {
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user) {
-      navigate("/login");
     } else {
       const likedVideos = JSON.parse(
         localStorage.getItem("likedVideos") || "{}"
